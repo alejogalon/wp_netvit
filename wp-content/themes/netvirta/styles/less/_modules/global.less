@@ -1,0 +1,160 @@
+/*****
+***
+**
+*   Global CSS
+**
+***
+*****/
+
+.transform-50 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .translate(-50%,-50%);
+}
+
+.transform-top50 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  .translate(0%,-50%);
+}
+.afterclear {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+} 
+.p-0 {
+  padding: 0;
+}
+.m-0 {
+  margin: 0;
+}
+.pr-15 {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.pl-15{
+  padding-right: 0;
+  padding-left: 15px;
+}
+.text-center{
+  text-align: center;
+}
+.p-sec-80{
+  padding: 80px 0;
+  margin-top: 5px;
+}
+@media (max-width: 480px) {
+  .p-sec-80 {
+    padding: 25px 0;
+  }
+}
+/* heading tags */
+h1, h2, h3 {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: 'poppinslight';
+
+  @media(max-width: 1366px) {
+      font-size: 52px;
+  }
+
+  @media(max-width: 1280px) {
+      font-size: 51px;
+  }
+
+  @media(max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media(max-width: 1024px) {
+     font-size: 48px;
+  }
+
+  @media(max-width: 991px) {
+     font-size: 39px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 29px;
+  }
+
+  @media (max-width: 480px) { 
+    font-size: 25px;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
+}
+
+h2{
+  font-size: 45px;
+
+  @media(max-width: 1366px) {
+    font-size: 42px;
+  }
+
+   @media(max-width: 1199px) {
+    font-size: 38px;
+  }
+
+  @media(max-width: 1024px) {
+    font-size: 37px;
+  }
+
+  @media(max-width: 991px) {
+     font-size: 36px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) { 
+    font-size: 23px;
+  }
+}
+
+h3{
+  font-size: 23px;
+
+  @media(max-width: 1280px) {
+    font-size: 20px;
+  }
+
+  @media(max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 17px;
+  }
+
+  @media(max-width: 640px) {
+    font-size: 17px;
+  }
+
+   @media(max-width: 480px) {
+    font-size: 14px;
+  }
+}

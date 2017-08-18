@@ -1,0 +1,148 @@
+/*****
+***
+**
+*	Contact Us Page CSS
+**
+***
+*****/
+
+.contact-us {
+	.contact-us-banner {
+		height: 110vh;
+
+		.heading {
+			margin-top: 90px;
+			
+			h1 {
+				color: white;
+				max-width: 935px;
+			}
+		}
+	}
+
+	.contact-us-content {
+		.heading {
+			 margin-bottom: 80px;
+		}
+
+		.left-content {
+			font-family: 'poppinslight';
+
+			.heading-content {
+				font-size: 27px;
+			}
+			.sub-heading {
+				font-size: 15px;
+			}
+		}
+
+		.right-content {
+			border-left: 1px solid @violet;
+			font-family: 'poppinsregular';
+			padding-left: 30px;
+
+			/* Contact Form 78 Styles */
+			.wpcf7 {
+				form {
+					color: @pink;
+
+					input {
+						&:not([type=checkbox]) {
+							width: 100%;
+						}
+						&[type=submit]{
+							background-color: @pink;
+							color: @white;
+						}
+					}
+
+					input, textarea {
+						.placeholderStyle(@pink; 14px);
+						.box-shadow(0px 0px 7.36px 0.64px rgba(0, 0, 0, 0.18));
+						border: 1px solid #eee;
+						margin-bottom: 20px;
+					    padding: 15px 20px;
+					    outline: none;
+					}
+					textarea {
+						resize: none;
+					}
+					.checkbox {
+						margin: 0 0 30px 0;
+
+						.wpcf7-list-item {
+							display: block;
+							margin: 0;
+
+							input {
+								&:not(.wpcf7-free-text){
+									position: absolute;
+									opacity: 0;
+								}
+								& + .wpcf7-list-item-label {
+									position: relative;
+									cursor: pointer;
+									padding: 0;
+								    display: inline-block;
+
+									&:before {
+										content: '';
+										display: inline-block;
+										vertical-align: middle;
+										width: 30px;
+										height: 32px;
+										background: @white;
+										border: 1px solid #eee;
+										margin: 0 20px 0 0;
+										.box-shadow(0px 0px 7.36px 0.64px rgba(0, 0, 0, 0.18));
+									}
+									
+								}
+
+								&:checked + .wpcf7-list-item-label:before {
+									content: '\f00c';
+									.transition(.3s all ease);
+									font-family: 'FontAwesome';
+									font-style: normal;
+									font-weight: normal;
+									font-variant: normal;
+									text-transform: none;
+									font-size: 27px;
+			                    	color: @pink;
+		                    	    -webkit-font-smoothing: antialiased;
+	                    	        -moz-osx-font-smoothing: grayscale;
+
+	                    	       /* &[value=Other]:checked + .wpcf7-list-item-label:before {
+	                    	        	.wpcf7-free-text {
+	                    	        		display: block;
+	                    	        	}
+	                    	        }*/
+								}
+							}
+
+							span {
+								margin-top: 30px;
+								display: inline-block;
+							}
+							label {
+								padding-left: 0px;
+							}
+
+							.wpcf7-free-text {
+								display: none;
+								margin-top: 30px;
+							}
+						}
+					}
+					.submit {
+						padding-top: 30px;
+						border-top: 1px solid @violet;
+					}
+					div.wpcf7-response-output {
+						margin: 7em 0 1em;
+					}
+				}
+			}
+		}
+	}	
+}

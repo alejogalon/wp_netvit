@@ -1,0 +1,282 @@
+/*****
+***
+**
+*	Verifyt Mobile And Platform CSS Styles (Homepage)
+**
+***
+*****/
+
+.verifyt {
+	height: 726px;
+	padding-top: 65px;
+
+	.verifyt-mobile-img {
+
+		.verify-mobile-holder {
+			.size( 320px; 660px;);
+			.center-block();
+			position: relative;
+
+			.verifyt_part1 {
+				right: -3px;
+				position: absolute;
+				top: 22%;
+			}
+
+			.verifyt_part2 {
+				position: absolute;
+				top: 12%;
+				left: -1.9px;
+				z-index: -1;
+			}
+
+			&:before {
+				content: '';
+				.size(86%; 38%;);
+				bottom: 0;
+				left: 24px;
+				z-index: -1;
+				position: absolute;
+				box-shadow: 0px 27px 32px 0px #909090, 100px 100px 100px -63px #D0D0D0;
+				/*.box-shadow(0px 27px 32px 0px #909090, 100px 100px 100px -63px #D0D0D0, -100px 100px 100px -62px #D0D0D0);*/
+				border-radius: 48px;
+				background-color: #929292;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				height: 0px;
+				bottom: 0px;
+				z-index: -3;
+				width: 100%;
+				box-shadow: 0px -239px 252px 170px #dfdfdf;
+
+				/*
+				** To be worked on ***
+				**  box-shadow: 0px -239px 252px 170px #dfdfdf, 0px -239px 252px 170px #D0D0D0, 0px -239px 252px 170px #D0D0D0; **
+				************************
+
+				background-color: #e0e0e0;
+
+				*/
+			}
+
+			> img:first-child {
+				border-radius: 48px;
+			}
+		}
+
+		.verify-mobile-content {
+			.size(279px; 497px;);
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    .translate(-50%, -50%);
+
+		    &:after {
+			    content: '';
+			    position: absolute;
+			    .size(140px; 100%);
+			    background-image: url(../images/verifyt_reflection.png);
+			    top: -85px;
+			    right: 0;
+		    }
+		}
+	}
+	.verifyt-content {
+		font-family: 'poppinslight';
+		width: 100%;
+		margin-top: 120px;
+
+		/* cloud base modules list */
+		#cloud-based {
+			p {
+				margin-bottom: 5px;
+
+				&:not(:first-child):before{
+					content: '•';
+					margin-right: 30px;
+				}
+			}
+		}
+		
+		.learn-more{ 
+			margin-top: 80px;
+			a{
+				padding: 18px 82px;
+			}
+		}
+
+		.verifyt-heading, p , #cloud-based {
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 24px;
+
+			.highlight {
+				font-family: 'poppinssemibold';
+			}
+		}
+	}
+
+	&#verifyt-platform{
+		height: auto;
+
+		.verifyt-content {
+			margin-top: 50px;
+		}
+	}
+
+	.verifyt-platform-icon {
+
+		ul {
+
+			li {
+    			.size(48%; 210px;);
+    			margin: 4px;
+    			border: 1px solid @green; 
+
+
+    			&:not(:first-child) {
+    				background-color: @green;
+
+    				
+    				&.active , &:hover , &:focus {
+					    background-color: @violet;
+    					border: 1px solid @violet;
+    					padding-bottom: 2px;
+    					.transition(0.3s all ease);
+
+    					.platform-desc-active {
+    						display: block;
+    					}
+
+    					.platform-content-desc {
+    						display: none;
+    					}
+    				}
+    			}
+
+    			&:first-child {
+    				a{	
+    					cursor: default;
+    				}
+    			}
+
+    			/* verify platform content icon disabled from any events */
+    			.platform-content-disable {
+    				background-size: 30%;
+				    position: relative;
+    			}
+
+    			&:nth-child(2) {
+
+    				a {
+    					.platform-content {
+    						background-size: 40%;
+    					}
+    				}
+				}
+
+				&:nth-last-child(2) {
+
+    				a {
+    					.platform-content {
+    						background-size: 25%;
+    					}
+    				}
+				}
+
+    			a {
+    				display: inline;
+
+	    			.platform-content {
+	    				background-size: 30%;
+					    position: relative;
+				        background-position-y: 50px;
+
+	    				.platform-content-desc, .platform-desc-active{
+	    					color: @white;
+	    					font-size: 16px;
+						    position: absolute;
+						    bottom: 15px;
+						    text-align: center;
+						    left: 50%;
+						    top: initial;
+						    .translate(-50%, 0);
+						    width: 14em;
+	    				}
+
+	    				.platform-desc-active {
+	    					display: none;
+	    				}
+	    			}
+    			}
+			}
+		}
+	}
+}
+
+/*****
+***
+**
+*	Verifyt 3d Scanning Page
+**
+***
+*****/
+
+.verifyt-scanning {
+	background-color: @violet;
+
+	.scanning-content {
+	    background-size: contain;
+        background-position-y: 50px;
+	    height: 100vh;
+
+		> .heading {
+			color: @white;
+		}
+
+		.content {
+			color: @white;
+			font-family: 'poppinslight';
+
+			.heading {
+				position: relative;
+    			margin-bottom: 20px;
+
+				&:after {
+					content: '';
+					height: 3px;
+					width: 100%;
+					background-color: @green;
+					position: absolute;
+					left: 0;
+					bottom: -5px;
+				}
+			}
+
+			.left-content {
+				padding: 0 60px;
+
+				.left-right-content:first-child {
+				    margin: 225px 0 60px 0;
+				}
+			}
+			.right-content {
+			    margin-top: 115px;
+			    padding: 0 60px;
+			    
+			    .left-right-content {
+			    	margin-bottom: 90px;
+			    }
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

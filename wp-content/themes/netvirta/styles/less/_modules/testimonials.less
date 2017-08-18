@@ -1,0 +1,76 @@
+/*****
+***
+**
+*	Testimonials CSS Styles
+**
+***
+*****/
+
+.testimonials {
+	height: 500px;
+    position: relative;
+    background-blend-mode: multiply;
+    background-color: #00acee;
+    margin: 70px 0 5px 0;
+
+    .testimonials-content {
+        color: @white;
+        width: 64%;
+
+        .testimonials-quote {
+        	font-size: 28px;
+        	font-family: 'poppinsregular';
+            margin-bottom: 50px;
+
+            .left-quote {
+                position: relative;
+
+                &:before {
+                    content: '\e800';
+                    font-family: 'fontello';
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    width: 1em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    position: absolute;
+                    right: .2em;
+                    top: -.2em;
+                }
+            }
+
+            .right-quote {
+                position: relative;
+
+                &:after {
+                     content: '\e801';
+                    font-family: 'fontello';
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    width: 1em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    position: absolute;
+                    left: 0.3em;
+                    bottom: -0.1em;
+                }
+            }
+        }   
+    }
+
+    .testimonials-founder {
+    	font-size: 24px;
+
+    	.lighter-font {
+    		font-family: 'poppinslight';
+    	}
+    }   
+}			

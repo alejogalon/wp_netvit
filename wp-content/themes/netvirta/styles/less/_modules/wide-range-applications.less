@@ -1,0 +1,58 @@
+/*****
+***
+**
+*	Wide Range Applications CSS
+**
+***
+*****/
+
+.wide-range-app {
+	background-color: @white;
+
+	.heading {
+		margin-bottom: 65px;
+	}
+
+	.content-images {
+		ul {
+			li {
+				.size(31%; 300px);
+				margin-bottom: 20px;
+				position: relative;
+				background-color: @violet;
+				background-blend-mode: luminosity;
+				cursor: pointer;
+				
+				.content {
+					.size(100%; 100%);
+
+					.images {
+						.size(100%; 100%);
+						.opacity(0.29);
+					}
+
+					&:hover {
+						.images {
+							.opacity(0.09);
+						}
+					}
+
+					.context {
+						color: @white;
+						font-family: 'poppinsregular';
+
+						p {
+							font-size: 23px;
+							text-align: center;
+							margin: 0;							
+						}
+					}
+				}
+
+				&:nth-child(2), &:nth-child(5) {
+					margin: 0 18px;
+				}
+			}
+		}
+	}
+}

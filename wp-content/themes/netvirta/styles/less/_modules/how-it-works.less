@@ -1,0 +1,51 @@
+/*****
+***
+**
+*	How It Works Section CSS
+**
+***
+*****/
+
+.how-it-works {
+	background-color: #ebebeb;
+
+	.heading {
+	    margin-bottom: 65px;
+	}
+
+	.content {
+
+		&:not(:last-child){
+			border-right: 2px solid;
+		}
+
+		.sub-content {
+			padding: 0 43px;
+			height: 300px;
+
+			.column-number {
+				width: 55%;
+				padding-top: 16px;
+				background-color: yellowgreen;
+				text-align: center;
+				border-radius: 50%;
+				margin: -30px auto 45px;	
+
+				.number {
+					font-size: 115px;
+					color: @white;
+					font-family: 'poppinsbold';
+					font-weight: bold;
+				}
+			}
+			.column-context {
+				font-size: 17px;
+
+				a {
+					color: @blue;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

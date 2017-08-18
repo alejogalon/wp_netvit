@@ -1,0 +1,127 @@
+/*****
+***
+**
+*	Footer
+**
+***
+*****/
+
+.footer {
+
+	.footer-content {
+		background-color: @darkgrey;
+		padding: 50px 0 33px;
+
+		.footer-heading {
+			margin-bottom: 1.5em;
+
+			p {
+				font-size: 12px;
+				color: @blue;
+				font-weight: bold;
+			}
+		}
+
+		.footer-subhead {
+			color: white;
+			
+			p:first-child {
+				font-family: 'poppinssemibold';
+				font-size: 18px;
+			}
+
+			p:nth-child(2) {
+				font-family: 'poppinslight';
+				font-size: 12px;
+			}
+
+			p.contact-learnmore {
+				margin-bottom: 0;
+				
+				a{
+					color: @pink;
+					font-size: 12px;
+				}
+			}
+
+			.contact-us {
+				margin-top: 2.5em;
+				
+				a {
+					font-size: 12px;
+				    padding: 18px 0;
+				    width: 100%;
+				    display: block;
+				}
+			}
+		}
+	}
+
+	/* white border as tab divider */
+	#request-verifyt-demo {
+	    padding: 0px 40px;
+	    border-left: 1px solid white;
+	    border-right: 1px solid white;
+	    height: 175px;
+	}
+
+	#contact-us {
+		padding-left: 30px;
+	}
+
+	.copyright-media {
+		background: @grey;
+
+		.copyright-media-content {
+			padding: 18px 0 0 0;
+
+				a {
+					color: @violet;
+					display: inline-block;
+
+				.media-conversation {
+					position: relative;
+
+					p {	
+
+						&:after, &:before {
+							font-family: 'FontAwesome';
+		                    font-style: normal;
+		                    font-weight: normal;
+		                    font-variant: normal;
+		                    text-transform: none;
+		                    position: absolute;
+		                    .transition(.3s all ease);
+						}
+						&:before {
+							content: '\f0c8';
+							font-size: 30px;
+		                    color: @pink;
+		                    right: -35px;
+		   					top: -12px;
+						}
+
+						&:after {
+							content: '\f0e1';
+							font-size: 20px;
+		                    color: @white;
+		                    right: -31px;
+		    				top: -7px;
+						}
+						
+						&:hover {
+						
+							&:before {
+								color: @white;
+							}
+
+							&:after {
+								color: @pink;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

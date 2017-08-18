@@ -1,0 +1,39 @@
+/*****
+***
+**
+*	My Custom Mixins CSS
+**
+***
+*****/
+
+.columns(@columns) {
+ 	-webkit-columns: @columns; /* Chrome, Safari, Opera */
+    -moz-columns: @columns; /* Firefox */
+    columns: @columns;
+}
+
+.translateX(@translateX) {
+    -webkit-transform: translateX(@translateX);
+    -moz-transform: translateX(@translateX);
+    transform: translateX(@translateX);
+}
+
+.placeholderStyle(@color, @fontSize){
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: @color;
+	  font-size: @fontSize;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: @color;
+	  font-size: @fontSize;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: @color;
+	  font-size: @fontSize;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: @color;
+	  font-size: @fontSize;
+	}
+}

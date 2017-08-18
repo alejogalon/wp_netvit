@@ -1,0 +1,116 @@
+/*****
+***
+**
+*	 Login CSS
+**
+***
+*****/
+
+.login-header {
+	background-color: #75a949; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #75a949 , #a6ce4e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #75a949, #a6ce4e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #75a949, #a6ce4e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #75a949 , #a6ce4e); /* Standard syntax */
+
+	.login-holder {
+		position: relative;
+
+		.logo-holder {
+			padding: 25px 15px 20px;
+
+			a{
+				height: auto;
+
+				img {
+					.size(240px; 95px;);
+				}
+			}
+		}
+
+		.form-holder {
+			position: absolute;
+			top: 50%;
+			right: 0%;
+			.translate(0%, -50%);
+
+			form{
+				font-size: 12px;
+
+				.form-group{
+					label {
+						margin-bottom: 0;
+
+						&.already-have {
+							color: @white;
+							margin-right: 20px;
+						}
+					}
+
+					input {
+						padding: 17px 20px;
+						.placeholderStyle(#727273; 12px;);
+						color: @violet;
+						font-size: 12px;
+						margin-right: 5px;
+					}
+
+					a {
+						color: @violet;
+						text-decoration: underline;
+					}
+				}
+				button {
+					background-color: @pink;
+					border: 2px solid @white;
+					color: @white;
+					font-size: 12px;
+					margin-right: 25px;
+
+
+				}
+			}
+		}
+	}
+}
+
+.login-body {
+	height: 1270px;
+	margin-top: 2px;
+	position: relative;
+
+	.login-content {
+		color: @white;
+		margin-top: 90px;
+
+		.content-header {
+			text-transform: capitalize;
+		}
+
+		.content-subhead {
+			p{
+				line-height: 1.4;
+				font-family: 'poppinsregular';
+				font-size: 23px;
+				max-width: 870px;
+				margin: auto;
+			}
+		}
+
+		.learn-more {
+			margin-top: 20px;
+			
+			a{
+				padding: 20px 45px;
+			}
+		}
+
+		.login-mobile-holder {
+			img{
+				position: absolute;
+				bottom: -50px;
+    			.translate(-50%, 0);
+			}
+		}
+	}
+}

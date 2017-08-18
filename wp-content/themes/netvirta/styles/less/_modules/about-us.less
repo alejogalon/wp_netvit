@@ -1,0 +1,98 @@
+/*****
+***
+**
+*	About Us Page CSS
+**
+***
+*****/
+
+.about-us {
+
+	.about-us-banner {
+		height: 116vh;
+		
+		.heading {
+		    max-width: 900px;
+		    margin-top: 90px;
+		}
+	}
+
+	.heading {
+		margin-bottom: 80px;
+	}
+
+	.company-overview {
+		.column-content {
+			p{
+				font-family: 'poppinslight';
+				font-size: 16px;
+
+				&:first-child {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+
+	.about-us-team {
+		font-family: 'poppinslight';
+		.content {
+			.content-img {
+				margin-bottom: 45px;
+			}
+
+			.position {
+				margin-bottom: 35px;
+				font-family: 'poppinsregular';
+				font-size: 17px;
+			    font-weight: bold;
+			}
+			.name {
+				font-size: 27px;
+			}
+
+			.bio {
+				font-size: 17px;
+				margin-bottom: 35px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+
+			.linkedin {
+				position: relative;
+
+				a {
+					color: @pink;
+					margin-left: 50px;
+
+					&:after, &:before {
+						font-family: 'FontAwesome';
+	                    font-style: normal;
+	                    font-weight: normal;
+	                    font-variant: normal;
+	                    text-transform: none;
+	                    position: absolute;
+	                    .transition(.3s all ease);
+					}
+					&:before {
+						content: '\f111';
+						font-size: 40px;
+						color: #f26d7d;
+						left: 0;
+						top: -15px;
+					}
+
+					&:after {
+						content: '\f08c';
+						font-size: 24px;
+						color: #fff;
+						left: 7.5px;
+						top: -6px;
+					}
+				}
+			}
+		}
+	}
+}
